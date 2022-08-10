@@ -7,48 +7,10 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'p2p_chat'",
-            "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--lib",
-                    "--package=p2p_chat"
-                ],
-                "filter": {
-                    "name": "p2p_chat",
-                    "kind": "lib"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
             "name": "Debug example 'p2p_chat'",
             "cargo": {
                 "args": [
                     "build",
-                    "--example=p2p_chat",
-                    "--package=p2p_chat"
-                ],
-                "filter": {
-                    "name": "p2p_chat",
-                    "kind": "example"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug unit tests in example 'p2p_chat'",
-            "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
                     "--example=p2p_chat",
                     "--package=p2p_chat"
                 ],
