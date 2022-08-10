@@ -1,4 +1,3 @@
-//! copy from Ping example
 //! use msg protocol
 //! See ../src/tutorial.rs for a step-by-step guide building the example below.
 //!
@@ -17,8 +16,8 @@
 //! cargo run --example p2p_chat  -- /ip4/127.0.0.1/tcp/24915
 //! ```
 //!
-//! The two nodes establish a connection, negotiate the ping protocol
-//! and begin pinging each other.
+//! The two nodes establish a connection, negotiate the msg protocol
+//! and begin message each other.
 
 use futures::{prelude::*, select};
 
